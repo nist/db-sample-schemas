@@ -60,22 +60,22 @@ PROMPT Setting FEEDBACK OFF for inserts
 PROMPT
 SET FEEDBACK OFF
 
-@__SUB__CWD__/order_entry/oe_p_pi
+@/home/oracle/src/db-sample-schemas/order_entry/oe_p_pi
 
-@__SUB__CWD__/order_entry/oe_p_pd
+@/home/oracle/src/db-sample-schemas/order_entry/oe_p_pd
 
-DEFINE vscript = __SUB__CWD__/order_entry/pwhs_&vrs
+DEFINE vscript = /home/oracle/src/db-sample-schemas/order_entry/pwhs_&vrs
 @&vscript
 
-DEFINE vscript = __SUB__CWD__/order_entry/pcus_&vrs
+DEFINE vscript = /home/oracle/src/db-sample-schemas/order_entry/pcus_&vrs
 @&vscript
 
-DEFINE vscript = __SUB__CWD__/order_entry/pord_&vrs
+DEFINE vscript = /home/oracle/src/db-sample-schemas/order_entry/pord_&vrs
 @&vscript
 
-@__SUB__CWD__/order_entry/oe_p_itm
+@/home/oracle/src/db-sample-schemas/order_entry/oe_p_itm
 
-@__SUB__CWD__/order_entry/oe_p_inv
+@/home/oracle/src/db-sample-schemas/order_entry/oe_p_inv
 
 PROMPT Setting FEEDBACK ON
 PROMPT

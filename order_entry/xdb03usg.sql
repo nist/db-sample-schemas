@@ -49,13 +49,13 @@ Rem    cbauwens    03/16/04 - Created
 --
 -- Create Repository Folder Hierarchy
 --
-@__SUB__CWD__/order_entry/createFolders.sql
+@/home/oracle/src/db-sample-schemas/order_entry/createFolders.sql
 
 
 --
 -- Load example documents into the XDB repository
 --
-@__SUB__CWD__/order_entry/createResources.sql
+@/home/oracle/src/db-sample-schemas/order_entry/createResources.sql
 
 
 --

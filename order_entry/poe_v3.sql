@@ -41,7 +41,7 @@ Rem
 
 DEFINE vrs = &1
 
-@__SUB__CWD__/order_entry/oe_views
+@/home/oracle/src/db-sample-schemas/order_entry/oe_views
 
 CREATE OR REPLACE VIEW account_managers AS
 SELECT		c.account_mgr_id 		ACCT_MGR,
@@ -119,9 +119,9 @@ sales_rep_id,
 promotion_id
 from orders;
 
-DEFINE vscript = __SUB__CWD__/order_entry/cmnt_&vrs
+DEFINE vscript = /home/oracle/src/db-sample-schemas/order_entry/cmnt_&vrs
 @&vscript
 
-DEFINE vscript = __SUB__CWD__/order_entry/cidx_&vrs
+DEFINE vscript = /home/oracle/src/db-sample-schemas/order_entry/cidx_&vrs
 @&vscript
 

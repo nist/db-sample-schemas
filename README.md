@@ -86,12 +86,12 @@ cd $HOME/db-sample-schemas
 
 The installation scripts need your current directory embedded in
 various locations.  Use a text editor or the following Perl script to
-make the changes, replacing occurrences of the token `__SUB__CWD__`
+make the changes, replacing occurrences of the token `/home/oracle/src/db-sample-schemas`
 with your current working directory, for example
 `/home/oracle/db-sample-schemas`
 
 ```shell
-perl -p -i.bak -e 's#__SUB__CWD__#'$(pwd)'#g' *.sql */*.sql */*.dat 
+perl -p -i.bak -e 's#/home/oracle/src/db-sample-schemas#'$(pwd)'#g' *.sql */*.sql */*.dat 
 ```
 
 ### 2.4. Set the Oracle environment
