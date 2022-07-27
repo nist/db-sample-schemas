@@ -82,17 +82,13 @@ The schema directory should be owned by the Oracle Database software owner.
 cd $HOME/db-sample-schemas
 ```
 
-### 2.3. Change all embedded paths to match your working directory
+### 2.3. Path
 
-The installation scripts need your current directory embedded in
-various locations.  Use a text editor or the following Perl script to
-make the changes, replacing occurrences of the token `/home/oracle/src/db-sample-schemas`
-with your current working directory, for example
-`/home/oracle/db-sample-schemas`
+The installation scripts use the following directory :
 
-```shell
-perl -p -i.bak -e 's#/home/oracle/src/db-sample-schemas#'$(pwd)'#g' *.sql */*.sql */*.dat 
-```
+```/home/oracle/src/db-sample-schemas ```
+
+Either clone this project in this directory or adjust the scripts.
 
 ### 2.4. Set the Oracle environment
 
